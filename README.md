@@ -1,6 +1,3 @@
-Git 基本應用
-=
-
 Linux 基本應用
 =
 > vi 文字編輯器
@@ -23,15 +20,20 @@ vi 三種模式
 
 
 vi 建立檔案
-直接輸入『 vi 檔名』就能夠進入 vi 的一般指令模式了。
-![新增檔案]](blob:https://proton.vir000.com/img/vi新增檔案.png)
+-
+直接輸入『 vi 檔名』就能夠進入 vi 的一般指令模式了。   
+<img src="https://proton.vir000.com/Jason/jason_gao/-/raw/main/img/vi%E6%96%B0%E5%A2%9E%E6%AA%94%E6%A1%88.png" width="300" />
 
 vi編輯檔案
-在一般指令模式之中，只要按下 i, o, a 等字元就可以進入編輯模式了
-![編輯檔案]](blob:https://proton.vir000.com/img/vi編輯檔案.png)
+-
+在一般指令模式之中，只要按下 i, o, a 等字元就可以進入編輯模式了  
+<img src="https://proton.vir000.com/Jason/jason_gao/-/raw/main/img/vi%E7%B7%A8%E8%BC%AF%E6%AA%94%E6%A1%88.png" width="300" />
 
 按下 [ESC] 按鈕回到一般指令模式
 
-進入指令列模式，檔案儲存並離開 vi 環境
-![編輯檔案]](blob:https://proton.vir000.com/img/檔案儲存離開Vi.png)
+進入指令列模式，檔案儲存並離開 vi 環境  
+-
+輸入『:wq』即可存檔離開！ 
+輸入『 ls -l 』即可看到我們剛剛建立的檔案.  
+<img src="https://proton.vir000.com/Jason/jason_gao/-/raw/main/img/%E6%AA%94%E6%A1%88%E5%84%B2%E5%AD%98%E9%9B%A2%E9%96%8BVi.png" width="100" />
 
