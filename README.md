@@ -85,3 +85,23 @@ vim 具有程式編輯的能力，可以主動的以字體顏色辨別語法的�
 > git merge < commit >
 ### 刪除分支
 > git branch -d < branch >
+### 使用 rebase 合併
+![常用指令圖](https://backlog.com/git-tutorial/tw/img/post/stepup/capture_stepup2_8_1_1.png)
+> (issue3) git rebase master
+
+![常用指令圖](https://backlog.com/git-tutorial/tw/img/post/stepup/capture_stepup2_8_1.png)
+
+### 取消過去提交  
+> git revert HEAD  
+![常用指令圖](https://backlog.com/git-tutorial/tw/img/post/stepup/capture_stepup7_2_2.png)
+### 放棄提交  
+> git reset HEAD^  
+> 每一個 ^ 符號表示「前一次」
+### 提取提交  
+> git cherry-pick HEAD
+
+![常用指令圖](https://backlog.com/git-tutorial/tw/img/post/stepup/capture_stepup6_4_1.png)
+### 合併提交  
+> git rebase -i HEAD~~
+### 修改提交
+> --amend
