@@ -5,7 +5,7 @@
 3. 訂定故事點 (story point) , 決定承接項目
 5. 任務認領 由小組成員自由認領
 
-### Refinement 目標細化
+### Refinement Meeting
 1. Po 與 開發團隊代表進行細部討論 , 確保項目目標清楚無誤
 
 ### Sprinting 衝刺中
