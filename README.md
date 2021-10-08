@@ -73,4 +73,15 @@ vim 具有程式編輯的能力，可以主動的以字體顏色辨別語法的�
 |  :wq  | 儲存後離開，若為 :wq! 則為強制儲存後離開  |
 
 ## 常用指令圖
-<img src="https://proton.vir000.com/Jason/jason_gao/-/raw/main/img/vim-commands.jpeg" width="400" />
+![常用指令圖](img/vim-commands.jpeg)
+
+
+# Git 應用
+### 建立分支
+> git branch < branchname >
+### 切換分支
+> git checkout < branch >
+### 合併分支
+> git merge < commit >
+### 刪除分支
+> git branch -d < branch >
