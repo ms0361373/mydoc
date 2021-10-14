@@ -43,25 +43,25 @@ parameter
 ![運行容器輸出信息](img/運行容器輸出信息.png)
  - run: 運行容器 ｜ node:指定鏡像 ｜ ／bin/echo: 執行打印命令   
 2. 運行交互容器  
-> $ docker run  < image >
+> $ docker run  < image >  
 ![運行容器輸出信息](img/運行交互容器.png)  
  - -t: 指定終端 ｜ －i: 使用交互操作
 3. 啟動容器(後台模式)  
-> $ docker run -d
+> $ docker run -d  
 ![運行容器後台模式](img/運行容器後台模式.png)  
 ![查看後台模式log](img/查看後台模式log.png)
 4. 容器停止  
-> $ docker stop < Container ID >
+> $ docker stop < Container ID >  
 ![容器停止](img/容器停止.png)  
 5. 容器重啟 
-> $ docker restart < Container ID > 
+> $ docker restart < Container ID >   
 ![容器重啟](img/容器重啟.png)  
 9. 進入容器  
-> $ docker exec -it < Container ID > /bin/bash
+> $ docker exec -it < Container ID > /bin/bash  
 ![進入容器](img/進入容器.png)  
  - /bin/bash: 開啟shell   
 7. 刪除容器  
-> $ docker rm < Container ID > 
+> $ docker rm < Container ID >   
 ![刪除容器](img/刪除容器.png)  
 ### image使用
 1. 鏡像列表  
@@ -76,10 +76,10 @@ parameter
 > $ docker pull < images >  
 ![拉取鏡像](img/拉取鏡像.png)  
 4. 刪除鏡像  
-> $ docker rmi < images >
+> $ docker rmi < images >  
 ![刪除鏡像](img/刪除鏡像.png)  
 5. 更新鏡像  
-> $ docker commit -m "update" -a=< another > < images > < images name >
+> $ docker commit -m "update" -a=< another > < images > < images name >  
 ![更新鏡像](img/更新鏡像.png)  
 ![更新鏡像2](img/更新鏡像2.png)  
  - -m: 描述 | -a: 指定作者 | jason/node:v2 :鏡像名稱  
@@ -87,7 +87,7 @@ parameter
 ![構建鏡像](img/構建鏡像.png)  
 ![構建鏡像2](img/構建鏡像2.png)  
 6. 以構建鏡像運行容器  
-> $ docker run -it -p <本機 port:Container port> -v < project path > --name < container name > < images >
+> $ docker run -it -p <本機 port:Container port> -v < project path > --name < container name > < images >  
 ![構建鏡像運行容器](img/構建鏡像運行容器.png) 
 ![構建鏡像運行容器2](img/構建鏡像運行容器2.png) 
 
