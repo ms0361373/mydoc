@@ -1,18 +1,21 @@
 # Docker
-讓開發者打包應用和依賴包至一個輕量級可移植的容器中，然後發佈到任何Linux機器上。
 
-## Docker 三個基本概念
-映像檔(Image): Image 是 container 的樣板  
-容器(Container): 應用透過容器執行  
-倉庫(Repository): 映像檔倉庫
-
-容器化技術？
+容器化技術?  
 ## VM 虛擬機 和 container 差異
 VM: 不同的Application 建立在不同的guest OS中還必須安裝各自的package，VM佔用的資源較大。  
-Container: 將Application 以及依賴資源封裝在container中，容器間彼此獨立運行，其相依資源也可重複利用以及搬遷。
+Container: 將Application 以及依賴資源封裝在container中，容器間彼此獨立運行，其相依資源也可重複利用以及搬遷。  
+![VM和Container差異](img/VM和Container差異.png)
 
+## Container 標準化
+Docker將Container內的所有程式（包括應用程式、相關函式庫、設定檔），都打包進Docker映象檔，並且提供了一個Dockerfile設定檔來記錄建立Container過程的每一個步驟包括參數。只要在任何支援Docker平臺的環境中，就可以從這個映象檔來建立出一個一模一樣的Container來執行同一個應用程式。如此一來，應用程式等於是可以透過Docker映象檔，或甚至只需要Dockerfile，就能將程式執行環境帶著走，移動到任何支援Docker的環境中。
 
-
+## Docker 三個基本概念
+### 映像檔(Image):   
+Docker 映像檔是一個模板，用來重複產生容器實體。例如：一個映像檔裡可以包含一個完整的 MySQL 服務、一個 Golang 的編譯環境、或是一個 Ubuntu 作業系統。透過 Docker 映像檔，我們可以快速的產生可以執行應用程式的容器。  
+### 容器(Container):  
+容器是用映像檔建立出來的執行實例。它可以被啟動、開始、停止、刪除。每個容器都是相互隔離、保證安全的平台。  
+### 倉庫(Repository): 
+倉庫是集中存放映像檔檔案的場所。  
 ## Docker 指令  
 
 |  指令   | 用法  |
@@ -87,7 +90,7 @@ parameter
 ![構建鏡像](img/構建鏡像.png)  
 ![構建鏡像2](img/構建鏡像2.png)  
 6. 以構建鏡像運行容器  
-> $ docker run -it -p <本機 port:Container port> -v < project path > --name < container name > < images >  
+> $ docker run -it -p <本機 port:container port> -v < folder path > --name < container name > < images >  
 ![構建鏡像運行容器](img/構建鏡像運行容器.png) 
 ![構建鏡像運行容器2](img/構建鏡像運行容器2.png) 
 
