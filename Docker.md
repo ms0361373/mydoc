@@ -82,7 +82,7 @@ parameter
 > $ docker rmi < images >  
 ![刪除鏡像](img/刪除鏡像.png)  
 5. 更新鏡像  
-> $ docker commit -m "update" -a=< another > < images > < images name >  
+> $ docker commit -m "update" -a=< another > < Container ID > < images name >  
 ![更新鏡像](img/更新鏡像.png)  
 ![更新鏡像2](img/更新鏡像2.png)  
  - -m: 描述 | -a: 指定作者 | jason/node:v2 :鏡像名稱  
