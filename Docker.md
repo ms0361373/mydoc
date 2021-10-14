@@ -2,12 +2,12 @@
 
 容器化技術?  
 ## VM 虛擬機 和 container 差異
-VM: 不同的Application 建立在不同的guest OS中還必須安裝各自的package，VM佔用的資源較大。  
-Container: 將Application 以及依賴資源封裝在container中，容器間彼此獨立運行，其相依資源也可重複利用以及搬遷。  
+VM: 不同的 Application 建立在不同的 guest OS 中還必須安裝各自的 package，VM 佔用的資源較大。  
+Container: 將 Application 以及依賴資源封裝在 container 中，容器間彼此獨立運行，其相依資源也可重複利用以及搬遷。  
 ![VM和Container差異](img/VM和Container差異.png)
 
 ## Container 標準化
-Docker將Container內的所有程式（包括應用程式、相關函式庫、設定檔），都打包進Docker映象檔，並且提供了一個Dockerfile設定檔來記錄建立Container過程的每一個步驟包括參數。只要在任何支援Docker平臺的環境中，就可以從這個映象檔來建立出一個一模一樣的Container來執行同一個應用程式。如此一來，應用程式等於是可以透過Docker映象檔，或甚至只需要Dockerfile，就能將程式執行環境帶著走，移動到任何支援Docker的環境中。
+Docker 將 Container 內的所有程式（包括應用程式、相關函式庫、設定檔），都打包進 Docker 映象檔，並且提供了一個 Dockerfile 設定檔來記錄建立 Container 過程的每一個步驟包括參數。只要在任何支援 Docker 平臺的環境中，就可以從這個映象檔來建立出一個一模一樣的 Container 來執行同一個應用程式。如此一來，應用程式等於是可以透過 Docker 映象檔，或甚至只需要 Dockerfile，就能將程式執行環境帶著走，移動到任何支援 Docker 的環境中。
 
 ## Docker 三個基本概念
 ### 映像檔(Image):   
@@ -20,14 +20,14 @@ Docker 映像檔是一個模板，用來重複產生容器實體。例如：一�
 
 |  指令   | 用法  |
 |  ----  | ----  |
-|   ps   | 查看container  |
-|   run   | 建立container 並執行指令  |
-|   exec   | 在外部向container 內執行指令  |
+|   ps   | 查看 container  |
+|   run   | 建立 container 並執行指令  |
+|   exec   | 在外部向 container 內執行指令  |
 |   stop   | 停止執行中的 container |
-|   rm   | 刪除container  |
-|   rmi   | 刪除image  |
-|   build   | 建立dockerfile  |
-|   images   | 查看images  |
+|   rm   | 刪除 container  |
+|   rmi   | 刪除 image  |
+|   build   | 建立 dockerfile  |
+|   images   | 查看 images  |
 
 parameter
 |  指令   | 用法  |
@@ -44,7 +44,7 @@ parameter
 1. 運行容器輸出信息  
 > $ docker run node /bin/echo "HiHi"  
 ![運行容器輸出信息](img/運行容器輸出信息.png)
- - run: 運行容器 ｜ node:指定鏡像 ｜ ／bin/echo: 執行打印命令   
+ - run: 運行容器 ｜ node: 指定鏡像 ｜ ／bin/echo: 執行打印命令   
 2. 運行交互容器  
 > $ docker run  < image >  
 ![運行容器輸出信息](img/運行交互容器.png)  
@@ -98,8 +98,8 @@ parameter
 透過 Compose 可以使用yml文件配置程序所有需要的服務，一個命令就可從配置文件中創建並啟動所有服務 
 
 compose 三個步驟
- - 使用Dockerfile 定義程序環境  
- - 使用docker-compose.yml 定義程序服務  
+ - 使用 Dockerfile 定義程序環境  
+ - 使用 docker-compose.yml 定義程序服務  
  - 執行 docker-compose up 來啟動並運行整個應用程序  
 ![compose](img/compose.png) 
 
