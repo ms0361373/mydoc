@@ -89,6 +89,7 @@ parameter
 6. 構建node鏡像  
 ![構建鏡像](img/構建鏡像.png)  
 ![構建鏡像2](img/構建鏡像2.png)  
+![構建鏡像3](img/構建鏡像3.png)  
 6. 以構建鏡像運行容器  
 > $ docker run -it -p <本機 port:container port> -v < folder path > --name < container name > < images >  
 ![構建鏡像運行容器](img/構建鏡像運行容器.png) 
