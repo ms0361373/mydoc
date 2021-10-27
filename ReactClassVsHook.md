@@ -22,6 +22,7 @@ React 目前有兩種方式寫成組件分別是 Class 或是 Functional
 # 用法   
 useState() :
 
+```js
     function Counter() {
         const [count , setCount] = useState(0) // 初始值為 ０
         return(<>
@@ -31,6 +32,8 @@ useState() :
             <button onClick={() => setCount(prevCount => prevCount + 1)}>+</button>
         <>)
     }
+```
+
 useEffect() :
 
     function a() {
