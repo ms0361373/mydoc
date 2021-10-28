@@ -6,14 +6,14 @@
 2. 代碼可讀性不需要添加註解，閱讀時方便理解需要傳入的 parameter type 和 return type
 3. 自動完成、導入
 
-# 範例
-型別註釋  
+## 範例
+* 型別註釋  
 ![js型別註釋](img/js型別註釋.png)  
 ![ts型別註釋](img/ts型別註釋.png)
 
-靜態型別檢查  
+* 靜態型別檢查  
 
-```js
+    ```js
     // js
     function getUserName(userInfo){
         return userInfo.name;
@@ -29,23 +29,23 @@
     function getUserName(userInfo: UserInfo): string {
         return userInfo.name;
     }
-```
-型別錯誤提示 :
+    ```
+* 型別錯誤提示 :
 
-![ts型別檢查](img/ts型別檢查.png)  
+    ![ts型別檢查](img/ts型別檢查.png)  
 
-未定義屬性檢查:  
+* 未定義屬性檢查 :  
 
-![未定義屬性拋錯](img/未定義屬性拋錯.png)  
+    ![未定義屬性拋錯](img/未定義屬性拋錯.png)  
 
-錯別字檢查:  
+* 錯別字檢查 :  
 
-![錯別字](img/錯別字.png)  
+    ![錯別字](img/錯別字.png)  
 
 
-常數運用提升可讀性:  
+* 常數運用提升可讀性 :  
     
-```js    
+    ```js    
     // 未使用 Enum
     const handleUserStatus = (status) => {
         switch(status){
@@ -75,23 +75,23 @@
                 return;
         }
     }
-```
+    ```
 
-定義可選參數 :
+* 定義可選參數 :
 
-```js
+    ```js
     // 參數加上`?`定義可選參數，使用時可以決定傳不傳參數 
     function getUserName(userInfo?: UserInfo): string {
         return userInfo ? userInfo.name : 'default';
     }
 
     getUserName(); // 未傳參數返回 'default'
-```
+    ```
 
-變數型別兼容 :
+* 變數型別兼容 :
 
-```js
+    ```js
     // 定義變數型別為 string or number
     let value: string | number = 'Hi'
     value = 0
-```
+    ```
