@@ -1,0 +1,162 @@
+{
+  // ESLint ==================================
+  // 儲存檔案用 eslint 格式化
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": ["./react", "./react_bbos", "./react_payment"],
+  // 狀態欄中顯示 eslint，方便查看是否正常運行
+  "eslint.alwaysShowStatus": true,
+  // 關閉 js 的默認格式化，統一用 eslint
+  "javascript.format.enable": false,
+  // 預設格式器
+  "editor.formatOnSave": false,
+  // 貼上自動格式化
+  "editor.formatOnPaste": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "prettier.singleQuote": false,
+    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "prettier.singleQuote": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "prettier.singleQuote": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "prettier.singleQuote": true,
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "prettier.singleQuote": false
+  },
+  "[go]": {
+    "prettier.singleQuote": true,
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[terraform]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.tabSize": 2, // optionally
+  },
+  "[terraform-vars]": {
+    "editor.tabSize": 2 // optionally
+  },
+  "prettier.singleQuote": true,
+  // Editor ==================================
+  // 編輯器文字大小
+  "editor.fontSize": 16,
+  // "editor.fontFamily": "Envy Code R Bold",
+  // "editor.fontWeight": "bold",
+  // 取消預設的 tabsize
+  "editor.detectIndentation": false,
+  // 編輯縮進空格
+  "editor.tabSize": 2,
+  // 將程式碼片段建議顯示於頂端
+  "editor.snippetSuggestions": "top",
+  // 限制字數的尺規
+  "editor.rulers": [120],
+  // 啟用 tab 鍵自動完成
+  "editor.tabCompletion": "on",
+  // vscode icon extension
+  "workbench.iconTheme": "vscode-icons",
+  // 終端機 ==================================
+  "terminal.integrated.defaultProfile.linux": "/bin/zsh",
+  // GoLang ==================================
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "go.testFlags": ["-v", "count=-1"],
+  // 控制在差異編輯器中是否把前空格或尾空格的改動顯示為差異
+  "diffEditor.ignoreTrimWhitespace": false,
+  // 拼字檢查
+  "cSpell.userWords": [
+    "alertify",
+    "antd",
+    "authed",
+    "bbin",
+    "cname",
+    "cnames",
+    "fontawesome",
+    "gorm",
+    "is",
+    "li-lin",
+    "middlewares",
+    "mysqldb",
+    "openapi",
+    "toastr"
+  ],
+  "redhat.telemetry.enabled": true,
+  //js 匯入路徑自動更新
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // 儲存檔案時在結尾插入一個新行
+  "files.insertFinalNewline": true,
+  // 儲存檔案時修剪尾端空白
+  "files.trimTrailingWhitespace": true,
+  // 檔案刪除時確認
+  "explorer.confirmDelete": false,
+  // 檔案拖曳時確認
+  "explorer.confirmDragAndDrop": false,
+  "leetcode.workspaceFolder": "/Users/jason_gao/.leetcode",
+  "bracketPairColorizer.depreciation-notice": false,
+  // EMMET ==================================
+  // 按下 tab 即可展開 emmet 縮寫
+  // "emmet.triggerExpansionOnTab": true,
+  // 在預設未支援的語言中啟用 emmet 縮寫
+  // "emmet.includeLanguages": {
+  //   "javascript": "javascriptreact",
+  //   "vue-html": "html",
+  //   "plaintext": "jade",
+  //   "ejs": "html"
+  // },
+  // "terminal.external.osxExec": "iTerm.app",
+  // "terminal.integrated.defaultProfile.osx": "zsh",
+  // "terminal.integrated.fontFamily": "Menlo",
+  // "vscode-pets.theme": "forest",
+  // "vscode-pets.petSize": "large",
+  // "vscode-pets.position": "explorer",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "javascript.validate.enable": false,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "php.suggest.basic": false,
+  "editor.fontLigatures": false,
+  "powermode.combo.location": "editor",
+  "powermode.combo.counterEnabled": "show",
+  "powermode.combo.counterSize": 5,
+  "powermode.combo.timeout": 1,
+  "powermode.presets": "simple-rift",
+  "github.copilot.advanced": {
+
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "go": true
+  },
+  "editor.inlineSuggest.enabled": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "git.confirmSync": false,
+  "git.ignoreRebaseWarning": true,
+  "chatgpt.apiKey": "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",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "chatgpt.timeoutLength": 20,
+  "codegpt.apiKey": "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",
+  "window.zoomLevel": -1,
+}
